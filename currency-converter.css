@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    width: 100VW;
+    height: 100dvh;
+    align-items: center;
+    justify-content: center;
+    background-color:#003249;
+}
+.currency-converter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    height: 55dvh;
+    background-color: #9AD1D4;
+    border-radius: 1rem;
+}
+form{
+    width: 100%;
+    height: 100%;
+    /* align-items: center;  */
+    /* display: flex;  */
+    /* flex-direction: column; */
+    padding: 1rem;
+    gap: 2rem;
+}
+form h2{
+    padding: 2rem 0 2rem 0;
+    font-size: x-large;
+}
+.enter-amnt{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    
+}
+.enter-amnt input{
+    font-size: large;
+    height: 3vh;
+    width: 16vw;  
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    display: flex;
+    text-align: center;
+    background-color: #F5E6E8;
+    
+}
+.your-value{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.converted-value{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    margin: 0.5rem 0 0 0.8rem;
+}
+.dropdown{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+form img{
+    width: 2rem;
+}
+.currency{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid transparent; */
+}
+.currency select{
+    height: 2vh;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.btn{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.btn button{
+    margin-top: 3rem;
+    height: 4vh;
+    background-color: #8D6A9F;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.btn button:hover{
+    border-bottom: 4px solid black;
+    background-color: #9d76b1;
+}
+
+
+
+@media (max-width : 600px) {
+ .currency-converter{
+    width: 80vw;
+    height:60dvh ;
+ }
+ form{
+    width:80vw;
+    height:60dvh;
+ }
+ .converted-value{
+    width: 40vw;
+ }
+ .converted-value  input{
+    width: 40vw;
+ }
+    
+}
+
+
+@media (max-width : 1000px) {
+    .currency-converter{
+       width: 50vw;
+       height:60dvh ;
+    }
+    form{
+       width:50vw;
+       height:60dvh;
+    }
+    .converted-value{
+       width: 40dvh;
+    }
+    .converted-value  input{
+       width: 100%;
+    }
+       
+   }
+
+   @media (min-width : 1001px ) and (max-width : 1700px) {
+    .currency-converter{
+       width: 30vw;
+       height:60dvh ;
+    }
+     form{
+       width:30vw;
+       height:60dvh;
+    } 
+    /* .converted-value{
+       width: 40dvh;
+    }
+    .converted-value  input{
+       width: 100%;
+    } */
+       
+   }
+   @media (max-width : 450px) {
+    .currency-converter{
+       width: 80vw;
+       height:60dvh ;
+    }
+    form{
+       width:80vw;
+       height:60dvh;
+    }
+    .converted-value{
+       width: 40vw;
+    }
+    .converted-value  input{
+       width: 40vw;
+    }
+       
+   }
